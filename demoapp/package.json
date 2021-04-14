@@ -20,9 +20,8 @@
   },
   "jest": {
     "coverageReporters": [
-  "text-summary",
-  "lcov",
-  "clover"
+  "text",
+  "cobertura"
 ]
   },
   "eslintConfig": {
