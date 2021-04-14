@@ -15,15 +15,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test",
-    "test-coverage": "npm run test -- --coverage --watchAll=false"
-  },
-  "jest": {
-    "coverageReporters": [
-  "text",
-  "cobertura"
-]
-  },
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+    },
+    "jest": {
+      "transform": {
+        "^.+\\.(js|jsx)$": "babel-jest"
+     },
+      "coverageReporters": [
+        "text",
+        "cobertura"
+      ]
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
