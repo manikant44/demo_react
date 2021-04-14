@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+    "test": "react-scripts test",
+    "test-coverage": "npm run test -- --coverage --coverageDirectory=output/coverage/jest --watchAll=false"
     },
     "jest": {
       "transform": {
