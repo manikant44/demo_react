@@ -15,7 +15,22 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-coverage": "npm run test -- --coverage --watchAll=false"
+  },
+  "jest": {
+    "coverageReporters": [
+  "text",
+  "cobertura"
+],
+"coverageThreshold": {
+  "global": {
+    "branches": 12,
+    "functions": 10,
+    "lines": 24,
+    "statements": 24
+  }
+}
   },
   "eslintConfig": {
     "extends": [
